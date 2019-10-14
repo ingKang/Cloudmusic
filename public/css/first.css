@@ -1,0 +1,878 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.box {
+    width: 1536px;
+    height: 1536px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    width: 1536px;
+    height: 70px;
+    background-color: #242424;
+    margin: 0 auto;
+}
+
+.menu .center {
+    width: 1200px;
+    height: 70px;
+    margin-left: 207px;
+}
+
+.menu .center a {
+    color: #ccc;
+}
+
+.center .head {
+    width: 200px;
+    height: 70px;
+    float: left;
+    margin-right: 30px;
+}
+
+.center .head a {
+    color: #fff;
+}
+
+.head .left {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.head .left img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.head .right {
+    width: 130px;
+    height: 70px;
+    line-height: 70px;
+    margin-left: 10px;
+    float: left;
+    font-size: 150%;
+    color: #fff;
+}
+
+.black{
+    background: #000;
+}
+.center .four {
+    width: 80px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.center .two {
+    width: 40px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.center .three {
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.center .five {
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.txt {
+    width: 180px;
+    height: 70px;
+    float: left;
+    position: relative;
+    margin-left: 40px;
+}
+
+.txt input {
+    width: 140px;
+    height: 35px;
+    border-radius: 27px 27px 27px 27px;
+    border-width: 1px;
+    margin-top: 17px;
+    padding-left: 40px;
+    outline: none;
+}
+
+.search {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 13px;
+    top: 27px;
+}
+
+.search img {
+    width: 15px;
+    height: 15px;
+
+}
+
+.CZZ {
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 27px 27px 27px 27px;
+    border: 1px solid #4f4f4f;
+    line-height: 30px;
+    text-align: center;
+    font-size: 90%;
+}
+
+.denglu {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 15px;
+}
+
+.denglu .left {
+    width: 50px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    text-align: center;
+    color: #787878;
+    font-size: 90%;
+}
+
+.denglu .right {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-top: 23px;
+}
+
+.denglu .right img {
+    width: 10px;
+    height: 10px;
+}
+
+.main {
+    display:block;
+    width: 1050px;
+    margin: 0 auto;
+    background: #fff;
+    
+}
+
+.menu2 {
+    width: 1536px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #c20c0c;
+}
+
+.cur{
+    background: #820909;
+}
+.menu2 .middle {
+    width: 636px;
+    height: 40px;
+    margin-left: 450px;
+}
+
+.middle .two {
+    width: 50px;
+    height: 25px;
+    border-radius: 27px 27px 27px 27px;
+    margin-top: 7.5px;
+    float: left;
+    line-height: 22px;
+    text-align: center;
+    font-size: 80%;
+    margin-right: 30px;
+}
+
+.middle .two:hover {
+    background-color: #820909;
+}
+
+.middle .three {
+    width: 60px;
+    height: 25px;
+    border-radius: 27px 27px 27px 27px;
+    margin-top: 7.5px;
+    float: left;
+    line-height: 22px;
+    text-align: center;
+    font-size: 80%;
+    margin-right: 30px;
+}
+
+.middle .three:hover {
+    background-color: #9b0909;
+}
+
+.middle .four {
+    width: 80px;
+    height: 25px;
+    border-radius: 27px 27px 27px 27px;
+    margin-top: 7.5px;
+    float: left;
+    line-height: 22px;
+    text-align: center;
+    font-size: 80%;
+    margin-right: 30px;
+}
+
+.middle .four:hover {
+    background-color: #9b0909;
+}
+
+.middle .two a,
+.middle .three a,
+.middle .four a {
+    color: #fff;
+}
+
+.photo {
+    width: 1049px;
+    height: 330px;
+    background-color: rgb(187, 187, 138);
+}
+
+.photo .left {
+    width: 800px;
+    height: 330px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    width: 800px;
+    height: 330px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.carousel .imgs ul li {
+    /*呼吸 所有图片摞在一起*/
+    width: 800px;
+    height: 330px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+.imgs ul li img{
+    width: 800px;
+    height: 330px;
+}
+
+.carousel .imgs ul li:first-child {
+    display: block;
+}
+
+.carousel .btns a {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.btns a img{
+    width: 30px;
+    height: 60px;
+}
+
+.carousel .btns a.rightBtn {
+    right: 0px;
+}
+
+.carousel .circles {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    left: 50%;
+    margin-left: -55px;
+    bottom: 15px;
+    overflow: hidden;
+}
+
+.carousel .circles ol {
+    width: 210px;
+}
+
+.carousel .circles ol li {
+    float: left;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    background-color: #999;
+    text-align: center;
+    line-height: 20px;
+    color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel .circles ol li.cur {
+    background-color: rgb(138, 41, 17);
+}
+/* .photo .left .lunbo {
+    width: 8000px;
+    height: 330px;
+
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    animation: myfirst infinite 160s;
+}
+
+.photo .left .lunbo img {
+    width: 800px;
+    height: 330px;
+    float: left;
+}
+
+@keyframes myfirst
+
+    {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    10% {
+        left: -800px;
+        top: 0px;
+    }
+
+    15% {
+        left: -800px;
+        top: 0px;
+    }
+
+    25% {
+        left: -1600px;
+        top: 0px;
+    }
+
+    30% {
+        left: -1600px;
+        top: 0px;
+    }
+
+    40% {
+        left: -2400px;
+        top: 0px;
+    }
+
+    45% {
+        left: -2400px;
+        top: 0px;
+    }
+
+    55% {
+        left: -3200px;
+        top: 0px;
+    }
+
+    60% {
+        left: -3200px;
+        top: 0px;
+    }
+
+    70% {
+        left: -4000px;
+        top: 0px;
+    }
+
+    75% {
+        left: -4000px;
+        top: 0px;
+    }
+
+    85% {
+        left: -4800px;
+        top: 0px;
+    }
+
+    90% {
+        left: -4800px;
+        top: 0px;
+    }
+
+    100% {
+        left: -5600px;
+        top: 0px;
+    }
+} */
+
+.photo .right {
+    width: 249px;
+    height: 330px;
+    float: right;
+    position: relative;
+}
+
+.photo .right img {
+    width: 250px;
+    height: auto;
+}
+
+.word {
+    width: 240px;
+    height: 20px;
+    line-height: 20px;
+    left: 10px;
+    bottom: 38px;
+    font-size: 76%;
+    position: absolute;
+    color: #8d8d8d;
+}
+
+.among {
+    width: 1050px;
+}
+
+.content {
+    width: 800px;
+    border: 1px solid gray;
+    border-bottom: 0px;
+    float: left;
+}
+
+.content a {
+    color: black;
+}
+
+.content .top {
+    width: 760px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #c10d0c;
+    float: left;
+}
+
+.content .top .yuan {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 17.5px;
+}
+
+.content .top .yuan img {
+    width: 15px;
+    height: 15px;
+}
+
+.content .top .next {
+    width: 82px;
+    height: 20px;
+    float: left;
+    margin-left: 10px;
+    line-height: 20px;
+    margin-top: 15px;
+    font-size: 120%;
+}
+
+.content .top .nextt {
+    width: 102px;
+    height: 20px;
+    float: left;
+    margin-left: 10px;
+    line-height: 20px;
+    margin-top: 15px;
+    font-size: 120%;
+}
+
+.content .top .long {
+    width: 632px;
+    height: 20px;
+    margin-left: 20px;
+    float: left;
+    margin-top: 15px;
+}
+
+.top .long .first {
+    width: 35px;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.content .long .null {
+    width: 2px;
+    height: 15px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 2.5px;
+    background-color: #ccc;
+}
+
+.content .long .more {
+    width: 35px;
+    height: 20px;
+    float: right;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.content .long .final {
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: 5px;
+}
+
+.content .long .final img {
+    width: 15px;
+    height: 15px;
+}
+
+.content .lump {
+    width: 160px;
+    height: 210px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.lump .bgcolor{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.content .lump img {
+    width: 160px;
+    height: 160px;
+}
+.bgcolor .bcolor{
+    background: url("../images/coverall.png") no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: 273% 1072%;
+}
+
+.bgcolor .bot {
+    width: 160px;
+    height: 28px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 30px;
+    background: rgba(14, 9, 9, 0.6);
+    border-top: 1px solid rgba(14, 9, 9, 0.65);
+}
+
+.bot a {
+    background: url("../images/iconall.png") no-repeat;
+    background-position: 10px 3px;
+    position: absolute;
+    bottom: 0px;
+    right: 3px;
+    width: 32px;
+    height: 26px;
+}
+
+.bot:hover {
+    background: rgba(14, 9, 9, 0.5);
+}
+
+.bot .icon {
+    background: url("../images/iconall.png") no-repeat;
+    background-position: 0px -17px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    width: 16px;
+    height: 27px;
+    /* background-size: 272% 1058%; */
+}
+
+.bot .nb {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    left: 27px;
+    bottom: 10px;
+    color: #ccc;
+    font-size: 75%;
+}
+
+/* .lump .one .top{
+    margin-top: 5px;
+    width: 120px;
+    height: 0px;
+    font-size: 120%;
+    text-align: center;
+    border: 0px;
+    background:red;
+}
+.lump .one .bottom{
+    width: 120px;
+    
+    margin-top: 0px;
+} */
+.content .lump p {
+    width: 160px;
+    height: 45px;
+    margin-top: 5px;
+    font-size: 90%;
+}
+
+.enter {
+    width: 246px;
+    height: 130px;
+    float: left;
+    position: relative;
+}
+
+.enter img {
+    width: 246px;
+    height: 130px;
+    border: 1px solid #999;
+    /* border-left:0px; */
+}
+
+.smallbox {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 80%;
+}
+
+.smallboxbox {
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    left: 75px;
+    top: 80px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #8a060b;
+    font-size: 80%;
+}
+
+.smallboxbox a {
+    color: white;
+}
+
+.singers {
+    width: 247px;
+    float: left;
+    /* border: 1px solid #999; */
+    border-left: 0px;
+}
+
+.singers>.top {
+    width: 208px;
+    height: 40px;
+    margin-left: 20px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 5px;
+}
+
+.singers .top .l {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    margin-top: 15px;
+    color: #333;
+}
+
+.singers .top .r {
+    width: 73px;
+    height: 20px;
+    line-height: 20px;
+    float: right;
+    margin-top: 15px;
+    font-size: 90%;
+}
+
+.singers .top .r a {
+    color: #777;
+}
+
+.singer {
+    width: 206px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    border: 1px solid #999;
+    margin-left: 20px;
+}
+
+.singer .zuo {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.singer .zuo img {
+    width: 60px;
+    height: 60px;
+}
+
+.singer .you {
+    width: 146px;
+    height: 60px;
+    float: right;
+}
+
+.singer .you .top {
+    width: 126px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    margin-left: 20px;
+    border: 0px;
+}
+
+.singer .you .top a {
+    color: #555;
+}
+
+.singer .you .bottom {
+    width: 126px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 85%;
+    float: right;
+    margin-left: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.singer .you .bottom a {
+    color: #333;
+}
+
+.singers .yyr {
+    width: 206px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.yyr a {
+    color: #333;
+}
+.singe {
+    width: 198px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 20px;
+}
+
+.singe .zuo {
+    width:40px;
+    float: left;
+}
+
+.singe .zuo img {
+    width: 40px;
+    height: 40px;
+}
+.singe .you {
+    width: 146px;
+    height: 40px;
+    float: right;
+}
+.singe .you .vv{
+    background: url("../images/icon.png") no-repeat;
+    background-position: 0px 0px;
+    position: relative;
+    bottom: -3px;
+    right: -2px;
+    width: 15px;
+    height: 13px;
+    float: left;
+}
+.singe .you .top {
+    width: 126px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    border: 0px;
+    font-size: 12px;
+}
+
+.singe .you .top a {
+    color: #555;
+    float: left;
+}
+
+.singe .you .bottom {
+    width: 155px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    font-family: Arial;
+}
+
+.singe .you .bottom a {
+    color: #333;
+}

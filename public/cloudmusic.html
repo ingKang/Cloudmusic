@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/播放.png">
+    <title>Cloudmusic</title>
+    <link rel="stylesheet" href="css/first.css">
+    <link rel="stylesheet" href="css/second.css">
+    <link rel="stylesheet" href="css/third.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/singer.css">
+    <link rel="stylesheet" href="css/radio.css">
+    <link rel="stylesheet" href="css/play.css">
+    <link rel="stylesheet" href="css/lunbo.css">
+    <link rel="stylesheet" href="./css/login.css" />
+</head>
+
+<body>
+    <!-- login-box -->
+    <div id='login-box' draggable="false">
+        <header> <span>用户登录</span> <span title="关闭窗口">x</span> </header>
+        <p class="tip"></p>
+        <section>
+            <div>
+                <a href="#"><span >+86</span>
+								<span id="area"></span> 
+							<ul class="area-country">
+								<li><span>中国</span> <span>+86</span></li>
+								<li><span>中国香港</span> <span>+852</span></li>
+								<li><span>中国澳门</span> <span>+853</span></li>
+								<li><span>中国台湾</span> <span>+886</span></li>
+								<li><span>英国</span> <span>+44</span></li>
+								<li><span>美国</span> <span>+1</span></li>
+								<li><span>加拿大</span> <span>+1</span></li>
+								<li><span>法国</span> <span>+33</span></li>
+								<li><span>日本</span> <span>+81</span></li>
+								<li><span>韩国</span> <span>+82</span></li>
+	
+							</ul>
+							</a>
+                <input id='user-phone' type="text" placeholder="请输入手机号" style="text-indent: 45px" />
+                <br>
+                <input id='user-password' type='password' placeholder="请输入密码" />
+            </div>
+            <label><input type="checkbox" id='check'/>记住密码</label><a href="#">忘记密码？</a>
+            <br>
+            <button>登录</button>
+        </section>
+        <aside>
+            <h1>新用户注册</h1>
+            <span>name：</span><input type='text' /><br>
+            <span>账号：</span><input type="text" /><br>
+            <span>密码：</span><input type="text" /><br>
+            <p id='register_tip'></p>
+            <button>注册</button>
+        </aside>
+        <footer>
+            <p>
+                < 返回 </p>
+                    <span>没有账号？免费注册 > </span>
+        </footer>
+    </div>
+    <!-- modal -->
+    <div id="modal"></div>
+    <!-- music-body   -->
+    <div class="box">
+        <div class="menu">
+            <div class="center">
+                <div class="head">
+                    <div class="left"><img src="images/cloudmusiclogo.png" alt=""></div>
+                    <div class="right"><a href="">网易云音乐</a></div>
+                </div>
+                <div class="four black"><a href="">发现音乐</a></div>
+                <div class="four"><a href="">我的音乐</a></div>
+                <div class="two"><a href="">朋友</a></div>
+                <div class="two"><a href="">商城</a></div>
+                <div class="three"><a href="">音乐人</a></div>
+                <div class="five"><a href="">下载客户端</a></div>
+                <div class="txt"><input type="text" placeholder="音乐/视频/电台/用户">
+                    <div class="search"><img src="images/sousuo.png" alt=""></div>
+                </div>
+                <div class="CZZ"><a href="">创作者中心</a></div>
+                <div class="denglu">
+                    <div class="left">登录</div>
+                    <div class="right"><img src="images/jiantou.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu2">
+            <ul class="middle">
+                <li class="two cur" index="1"><a href="">推荐</a></li>
+                <li class="three" index="2"><a href="">排行榜</a></li>
+                <li class="two" index="3"><a href="">歌单</a></li>
+                <li class="four" index="4"><a href="">主播电台</a></li>
+                <li class="two" index="5"><a href="">歌手</a></li>
+                <li class="four" index="6"><a href="">新碟上架</a></li>
+            </ul>
+        </div>
+        <div class="big">
+            <div class="main">
+                <div class="photo">
+                    <div class="left">
+                        <div class="carousel" id="carousel">
+                            <div class="imgs">
+                                <ul>
+                                    <li><img src="images/01.jpg" alt=""></li>
+                                    <li><img src="images/02.jpg" alt=""></li>
+                                    <li><img src="images/03.jpg" alt=""></li>
+                                    <li><img src="images/04.jpg" alt=""></li>
+                                    <li><img src="images/05.jpg" alt=""></li>
+                                    <li><img src="images/06.jpg" alt=""></li>
+                                    <li><img src="images/07.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="btns">
+                                <a href="javascript:void(0);" class="leftBtn" id="leftBtn"><img src="images/arrl.png" alt=""></a>
+                                <a href="javascript:void(0);" class="rightBtn" id="rightBtn"><img src="images/arrr.png" alt=""></a>
+                            </div>
+                            <div class="circles" id="circles">
+                                <ol>
+                                    <li class="cur"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- <div class="lunbo">
+							<img src="images/01.jpg" alt="">
+							<img src="images/02.jpg" alt="">
+							<img src="images/03.jpg" alt="">
+							<img src="images/04.jpg" alt="">
+							<img src="images/05.jpg" alt="">
+							<img src="images/06.jpg" alt="">
+							<img src="images/07.jpg" alt="">
+							<img src="images/08.jpg" alt="">
+						</div> -->
+                    </div>
+                    <div class="right">
+                        <img src="images/download2.png" alt="">
+                        <div class="word">PC 安卓 iPhone WP iPad Mac 六大客户端</div>
+                    </div>
+                </div>
+                <div class="among">
+                    <div class="content">
+                        <div class="top">
+                            <div class="yuan">
+                                <img src="images/yuan.png" alt="">
+                            </div>
+                            <div class="next">热门推荐</div>
+                            <div class="long">
+                                <div class="first"><a href="">华语</a></div>
+                                <div class="null"></div>
+                                <div class="first"><a href="">流行</a></div>
+                                <div class="null"></div>
+                                <div class="first"><a href="">摇滚</a></div>
+                                <div class="null"></div>
+                                <div class="first"><a href="">民谣</a></div>
+                                <div class="null"></div>
+                                <div class="first"><a href="">电子</a></div>
+                                <div class="final"><img src="images/next2.png" alt=""></div>
+                                <div class="more"><a href="">更多</a></div>
+                            </div>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/one.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>【vip专享】一周新歌推荐</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/two.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>童稚流行|释放天真俏皮的自由派</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/three.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>低哑声线爱好者|独特的爆炸与温柔</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/four.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>儿童歌曲《虫儿飞》</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/five.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>又困又丧的上午适合来点粉红气泡</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/six.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>FEVER Series 21 | Psy-Trance</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/seven.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>「民谣」边走边唱如诗如歌如理想</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/eight.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p> Bharatt- Saurabh - Mila Jo Tu</p>
+                            </a>
+                        </div>
+
+                        <div class="top">
+                            <div class="yuan">
+                                <img src="images/yuan.png" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <div class="nextt">个性化推荐</div>
+                        </div>
+
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/gong.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>重温旧梦 电影里的深情告白</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/go.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>【我们出发吧】轻快悦耳旋律伴你在路上</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/hei.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>人生赢家:纵有疾风起，人生不言弃</p>
+                            </a>
+                        </div>
+                        <div class="lump">
+                            <div class="bgcolor">
+                                <img src="images/mu.jpg" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <a href="">
+                                <p>成长|世界上没有真正的感同身受</p>
+                            </a>
+                        </div>
+                        <div class="top">
+                            <div class="yuan">
+                                <img src="images/yuan.png" alt="">
+                                <a href="" class="bcolor"></a>
+                                <div class="bot">
+                                    <span class="icon"></span>
+                                    <span class="nb">2550</span>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <div class="nextt">新碟上架</div>
+                        </div>
+                        <div class="other">
+                            <div class="o-left"></div>
+                            <div class="father">
+                                <div class="lunbo">
+                                    <div class="first-k">
+                                        <ul class="f-k-f">
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-6.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">Norman</a></p>
+                                                <p><a href="">Lana Del Rey</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-7.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">Lover</a></p>
+                                                <p><a href="">Taylor Swift</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-8.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">引路的风筝</a></p>
+                                                <p><a href="">张韶涵</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-9.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">花都开好了</a></p>
+                                                <p><a href="">火箭少女101</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-10.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">Hollywood</a></p>
+                                                <p><a href="">Post Malone</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="second-k">
+                                        <ul class="f-k-f">
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-1.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">把故事写成我们</a></p>
+                                                <p><a href="">林俊杰</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-2.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">黄荒诞学长</a></p>
+                                                <p><a href="">尤长靖</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-3.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">Life·Live</a></p>
+                                                <p><a href="">花粥/焦迈奇</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-4.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">我不好</a></p>
+                                                <p><a href="">张艺兴</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-5.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">EVEN WONG</a></p>
+                                                <p><a href="">王晨艺</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="third-k">
+                                        <ul class="f-k-f">
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-6.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">Norman</a></p>
+                                                <p><a href="">Lana Del Rey</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-7.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">Lover</a></p>
+                                                <p><a href="">Taylor Swift</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-8.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">引路的风筝</a></p>
+                                                <p><a href="">张韶涵</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-9.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">花都开好了</a></p>
+                                                <p><a href="">火箭少女101</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-10.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">Hollywood</a></p>
+                                                <p><a href="">Post Malone</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="four-k">
+                                        <ul class="f-k-f">
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-1.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">把故事写成我们</a></p>
+                                                <p><a href="">林俊杰</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-2.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">黄荒诞学长</a></p>
+                                                <p><a href="">尤长靖</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-3.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">Life·Live</a></p>
+                                                <p><a href="">花粥/焦迈奇</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-4.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">我不好</a></p>
+                                                <p><a href="">张艺兴</a></p>
+                                            </li>
+                                            <li>
+                                                <div class="lili">
+                                                    <img src="images/o-5.jpg" alt="">
+                                                    <a href="" class="wc"></a>
+                                                </div>
+                                                <p><a href="">EVEN WONG</a></p>
+                                                <p><a href="">王晨艺</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="o-right"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="enter">
+						<img src="images/board.png" alt="">
+						<div class="smallbox">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</div>
+						<div class="smallboxbox"><a href="">用户登入</a></div>
+					</div> -->
+                    <div class="singers">
+                        <div class="top">
+                            <div class="l">
+                                <b>入驻歌手</b>
+                            </div>
+                            <div class="r">
+                                <a href="">查看全部 ></a>
+                            </div>
+                        </div>
+                        <div class="singer">
+                            <div class="zuo">
+                                <a href=""><img src="images/zhm.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">张惠妹aMEI</a></div>
+                                <div class="bottom"><a href="">台湾歌手张惠妹</a></div>
+                            </div>
+                        </div>
+                        <div class="singer">
+                            <div class="zuo">
+                                <a href=""><img src="images/fine.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">Fine乐团</a></div>
+                                <div class="bottom"><a href="">独立音乐人</a></div>
+                            </div>
+                        </div>
+                        <div class="singer">
+                            <div class="zuo">
+                                <a href=""><img src="images/yxl.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">万晓利</a></div>
+                                <div class="bottom"><a href="">民谣歌手、中国现代民谣的代表人物之一</a></div>
+                            </div>
+                        </div>
+                        <div class="singer">
+                            <div class="zuo">
+                                <a href=""><img src="images/zl.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">音乐人赵雷</a></div>
+                                <div class="bottom"><a href="">民谣歌手</a></div>
+                            </div>
+                        </div>
+                        <div class="singer">
+                            <div class="zuo">
+                                <a href=""><img src="images/wsb.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">王三溥</a></div>
+                                <div class="bottom"><a href="">音乐人</a></div>
+                            </div>
+                        </div>
+                        <div class="yyr"><a href="">申请成为网易音乐人</a></div>
+                        <div class="clear"></div>
+                        <div class="top">
+                            <div class="l">
+                                <b>热门主播</b>
+                            </div>
+                            <div class="r">
+                                <a href="">查看全部 ></a>
+                            </div>
+                        </div>
+                        <div class="singe">
+                            <div class="zuo">
+                                <a href=""><img src="images/chenli.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">陈立</a>
+                                    <p class="vv"></p>
+                                </div>
+                                <div class="bottom"><a href="">心理学家、美食家陈立教授</a></div>
+                            </div>
+                        </div>
+                        <div class="singe">
+                            <div class="zuo">
+                                <a href=""><img src="images/yanqiu.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">DJ艳秋</a>
+                                    <p class="vv"></p>
+                                </div>
+                                <div class="bottom"><a href="">著名音乐节目主持人</a></div>
+                            </div>
+                        </div>
+                        <div class="singe">
+                            <div class="zuo">
+                                <a href=""><img src="images/yonghu.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">用户324314596</a>
+                                    <p class="vv"></p>
+                                </div>
+                                <div class="bottom"><a href="">国家大剧院古典音乐官方</a></div>
+                            </div>
+                        </div>
+                        <div class="singe">
+                            <div class="zuo">
+                                <a href=""><img src="images/xiaosu.jpg" alt=""></a>
+                            </div>
+                            <div class="you">
+                                <div class="top"><a href="">DJ晓苏</a>
+                                    <p class="vv"></p>
+                                </div>
+                                <div class="bottom"><a href="">独立DJ，CRI环球旅游广播特邀DJ</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+
+            <div class="phb">
+                <div class="left">
+                    <h2 class="scd">云音乐特色榜</h2>
+                    <ul class="duo">
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">云音乐飙升榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">云音乐新歌榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">网易原创歌曲榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">云音乐热歌榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2 class="scd">全球媒体榜</h2>
+                    <ul class="duo">
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">云音乐飙升榜</p>
+                                <p class="bottom">每天更新</p>
+                                <!-- <div class="clear"></div> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">云音乐新歌榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">网易原创歌曲榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">云音乐热歌榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">云音乐新歌榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">网易原创歌曲榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="zuo">
+                                    <a href=""><img src="images/biao.jpg" alt=""></a>
+                                </div>
+                                <p class="top">云音乐热歌榜</p>
+                                <p class="bottom">每天更新</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="first">
+                        <div class="ig">
+                            <img src="images/biaosheng.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <p>云音乐飙升榜</p>
+                            <div class="center">最近更新: 9.18 (今日更新)</div>
+                            <div class="bottom">
+                                <div>
+                                    <a href=""><img src="images/播放.png" alt=""></a>
+                                    播放
+                                </div>
+                                <ul>
+                                    <li><img src="images/add.png" alt="">(2310939)</li>
+                                    <li><img src="images/show.png" alt="">(6779)</li>
+                                    <li><img src="images/download3.png"></img>下载</li>
+                                    <li><img src="images/info.png" alt="">(154082)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="secondleft">
+                            歌曲列表
+                            <span>100首歌</span>
+                        </div>
+                        <div class="secondright">
+                            播放:<strong class="red">2349411840</strong>次
+                        </div>
+                    </div>
+                    <div class="third">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>标题</th>
+                                    <th>时长</th>
+                                    <th>歌手</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="le">1</span>
+                                        <span class="le">new</span>
+                                    </td>
+                                    <td>
+                                        <img src="images/music1.jpg" alt="">
+                                        <img src="images/播放.png" alt="">
+                                        <div class="songname">骑上我心爱的小摩托(2019)</div>
+                                    </td>
+                                    <td>02:02</td>
+                                    <td>静sir</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">2</span>
+                                        <span class="le"><img src="images/top.png" alt=""><i>53</i></span>
+                                    </td>
+                                    <td>
+                                        <img src="images/music2.jpg" alt="">
+                                        <img src="images/播放.png" alt="">
+                                        <div class="songname">那女孩对我说</div>
+                                    </td>
+                                    <td>04.40</td>
+                                    <td>Uu</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">3</span>
+                                        <span class="le">new</span>
+                                    </td>
+                                    <td>
+                                        <img src="images/music3.jpg" alt="">
+                                        <img src="images/播放.png" alt="">
+                                        <div class="songname">下雨的杭州</div>
+                                    </td>
+                                    <td>04.43</td>
+                                    <td>解忧邵帅</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">4</span>
+                                        <span class="le">new</span>
+                                    </td>
+                                    <td>
+
+                                        <div><img src="images/播放.png" alt=""></div>
+                                        <div class="songname">迷人的危险</div>
+                                    </td>
+                                    <td>04:02</td>
+                                    <td>尚士达/td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">5</span>
+                                        <span class="le"><img src="images/top.png" alt=""><i>48</i></span>
+                                    </td>
+                                    <td>
+
+                                        <div><img src="images/播放.png" alt=""></div>
+                                        <div class="songname">梦瘾者</div>
+                                    </td>
+                                    <td>03:47</td>
+                                    <td>代诗琪</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">6</span>
+                                        <span class="le">new</span>
+                                    </td>
+                                    <td>
+                                        <div><img src="images/播放.png" alt=""></div>
+                                        <div class="songname">长安的少年</div>
+                                    </td>
+                                    <td>04.32</td>
+                                    <td>国风堂/小魂</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">7</span>
+                                        <span class="le">new</span>
+                                    </td>
+                                    <td>
+
+                                        <div><img src="images/播放.png" alt=""></div>
+                                        <div class="songname">流离</div>
+                                    </td>
+                                    <td>04:35</td>
+                                    <td>周星星</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">8</span>
+                                        <span class="le">new</span>
+                                    </td>
+                                    <td>
+
+                                        <div><img src="images/播放.png" alt=""></div>
+                                        <div class="songname">胆怯</div>
+                                    </td>
+                                    <td>04:38</td>
+                                    <td>郝宇星</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">9</span>
+                                        <span class="le">new</span>
+                                    </td>
+                                    <td>
+
+                                        <div><img src="images/播放.png" alt=""></div>
+                                        <div class="songname">双星</div>
+                                    </td>
+                                    <td>04:35</td>
+                                    <td>朱婧汐JING</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="le">10</span>
+                                        <span class="le">new</span>
+                                    </td>
+                                    <td>
+
+                                        <div><img src="images/播放.png" alt=""></div>
+                                        <div class="songname">爱说</div>
+                                    </td>
+                                    <td>04:35</td>
+                                    <td>咖啡因乐队</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gd">
+                <div class="one">
+                    <span>全部</span>
+                    <div class="oneleft">选择分类<img src="images/downdown.png" alt=""></div>
+                    <div class="oneright">热门</div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music4.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>想做你温暖的小太阳，一生只为你发光</p>
+                        <span>by-与情殇</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music5.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>深夜独享|耳机里的治愈宇宙</p>
+                        <span>by 近词</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music6.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+
+                        <p>[日系萌音]棉花糖般软甜</p>
+                        <span>by C4n44n</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music7.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>愿身边所有心软善良的人都能被温柔以待</p>
+                        <span>by 真爱喝柠檬茶</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music8.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>神仙嗓音:萦绕于璀璨星河的旋律</p>
+                        <span>by mayuko然</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music9.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>行走在黑色的夜晚，捡拾着星星的碎片</p>
+                        <span>by 星球恋爱所</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music10.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>关于秋天:这是一个适合想念的季节</p>
+                        <span>by 后原</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music11.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>甜份补给站-眼前都是有你的画面</p>
+                        <span>by shakemyhead</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music12.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>黄昏 落日余晖里的慵懒情调</p>
+                        <span>by 星辰俱乐部</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music13.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>心动的信号第二季|BGM合辑</p>
+                        <span>by 馨钰xinyu</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music14.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>学习用[纯音乐]</p>
+                        <span>by 踿裟</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music15.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>来一记良药拯救即将到来的日子</p>
+                        <span>by 付悫</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music16.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>忧郁少年 你的城市是否有雨</p>
+                        <span>by 原创君</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music17.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>【纯音集】 今夜月色真美</p>
+                        <span>by Nanoha</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music18.jpg" alt="">
+                            <a href="" title="如果累了,借你一处耳机下的防空洞" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>如果累了,借你一处耳机下的防空洞</p>
+                        <span>by 王大治你快回来</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music19.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>音乐神秘岛||感受温柔与梦幻的碰撞</p>
+                        <span>by 羊不吃星星</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music20.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>日系青春:你是我还未说出口的喜欢</p>
+                        <span>by 是月月哦QWQ</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music21.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>星河入梦|逆光漫步一场梦幻旅行</p>
+                        <span>by 付鱼骨与飞鸟集</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music22.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>【欧美私人订制】最懂你的欧美日推</p>
+                        <span>by 网易云音乐</span>
+                    </li>
+                    <li>
+                        <div class="cov">
+                            <img src="images/music23.jpg" alt="">
+                            <a href="" title="如果累了" class="msg"></a>
+                            <div class="down">
+                                <span class="icon"></span>
+                                <span class="nb">2550</span>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <p>【欧美订制】欧美万评撩耳男音</p>
+                        <span>by Nanoha</span>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <div class="radio">
+                <div class="box-top">
+                    <ul class="box-top-flag">
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/sing.png">
+                                    <p>创作|翻唱</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/ear.png">
+                                    <p>3D|电子</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/smile.png">
+                                    <p>情感调频</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/music.png">
+                                    <p>音乐故事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/two.png">
+                                    <p>二次元</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/book-online.png">
+                                    <p>有声书</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/light.png">
+                                    <p>知识技能</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/money.png">
+                                    <p>商业财经</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/history.png">
+                                    <p>人文历史</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/English.png">
+                                    <p>外语世界</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/milk.png">
+                                    <p>亲子宝贝</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/shanzi.png">
+                                    <p>相声曲艺</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/book.png">
+                                    <p>美文读物</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/talkshow.png">
+                                    <p>脱口秀</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/radio.png">
+                                    <p>广播剧</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/host.png">
+                                    <p>明星主播</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/happy.png">
+                                    <p>影视|娱乐</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flag-a">
+                                <div class="flag-icon"><img src="images/science.png">
+                                    <p>科技科学</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-banner">
+                    <div class="box-banner-left">
+                        <div class="box-banner-left-top">
+                            <span>推荐节目</span>
+                            <a href="#">更多></a>
+                        </div>
+                        <ul>
+                            <li class="item">
+                                <a href="#" class="picture"><img src="images/mountain.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>「日本」海看久了想见人，人见多了想看海</span>
+                                    <p>黑方HaveFun电台</p>
+                                </div>
+                                <a href="#" class="title-right">旅途|城市</a>
+                            </li>
+                            <li class="item-bg">
+                                <a href="#" class="picture"><img src="images/left2.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>野 狼 迪 斯 科</span>
+                                    <p>欢 迎 来 到 郑 杰 伦 的 舞 厅</p>
+                                </div>
+                                <a href="#" class="title-right">创作|翻唱</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="picture"><img src="images/left3.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>芒狼disco(芒种x野狼disco)</span>
+                                    <p>郭皓月Howard</p>
+                                </div>
+                                <a href="#" class="title-right">创作|翻唱</a>
+                            </li>
+                            <li class="item-bg">
+                                <a href="#" class="picture"><img src="images/left4.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>赤伶</span>
+                                    <p>杨光ze的音乐电台</p>
+                                </div>
+                                <a href="#" class="title-right">创作|翻唱</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="picture"><img src="images/left5.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>九月观影指南：罗小黑战记是国漫黑马？</span>
+                                    <p>歪果 · 乱弹娱乐 Wiggle Bar</p>
+                                </div>
+                                <a href="#" class="title-right">脱口秀</a>
+                            </li>
+                            <li class="item-bg">
+                                <a href="#" class="picture"><img src="images/left6.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>VVIP Session 038: Guest BIJOU</span>
+                                    <p>PurpleBattery's VVIP Session</p>
+                                </div>
+                                <a href="#" class="title-right">3D|电子</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="picture"><img src="images/left7.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>【006】我最迷恋的是当众孤独</span>
+                                    <p>GQ Talk</p>
+                                </div>
+                                <a href="#" class="title-right">脱口秀</a>
+                            </li>
+                            <li class="item-bg">
+                                <a href="#" class="picture"><img src="images/left8.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>世间温柔 你占十分</span>
+                                    <p>陪你捉妖怪</p>
+                                </div>
+                                <a href="#" class="title-right">情感调频</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-banner-right">
+                        <div class="box-banner-right-top">
+                            <span>节目排行榜</span>
+                            <a href="#">更多></a>
+                        </div>
+                        <ul>
+                            <li class="item">
+                                <a href="#" class="picture"><img src="images/right1.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>暗示分离 王巨星（原唱en）</span>
+                                    <p>王巨星的电台</p>
+                                </div>
+                                <a href="#" class="title-right">NO.1</a>
+                            </li>
+                            <li class="item-bg">
+                                <a href="#" class="picture"><img src="images/right2.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>人生最大的遗憾，就是“算了吧”</span>
+                                    <p>蕊希电台</p>
+                                </div>
+                                <a href="#" class="title-right">NO.2</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="picture"><img src="images/right3.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>飞行日记</span>
+                                    <p>你的星冰乐</p>
+                                </div>
+                                <a href="#" class="title-right">NO.3</a>
+                            </li>
+                            <li class="item-bg">
+                                <a href="#" class="picture"><img src="images/right4.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>圈住你</span>
+                                    <p>爱吃巧乐兹</p>
+                                </div>
+                                <a href="#" class="title-right">NO.4</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="picture"><img src="images/right5.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>星空物语</span>
+                                    <p>网瘾少女叽</p>
+                                </div>
+                                <a href="#" class="title-right">NO.5</a>
+                            </li>
+                            <li class="item-bg">
+                                <a href="#" class="picture"><img src="images/right6.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>事与愿违和爱而不得，才是人生。</span>
+                                    <p>程一电台</p>
+                                </div>
+                                <a href="#" class="title-right">NO.6</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="picture"><img src="images/right7.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>这次,我不会再选择去放弃了</span>
+                                    <p>戴上耳机♫感受一切</p>
+                                </div>
+                                <a href="#" class="title-right">NO.7</a>
+                            </li>
+                            <li class="item-bg">
+                                <a href="#" class="picture"><img src="images/right8.jpg" alt=""></a>
+                                <div class="title">
+                                    <span>野狼DISCO 抖音姚智鑫版</span>
+                                    <p>Jason的抖音翻唱集</p>
+                                </div>
+                                <a href="#" class="title-right">NO.8</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-last">
+                    <div class="box-last-top">
+                        <span>音乐故事.电台</span>
+                        <a href="#">更多></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/last1-1.jpg" width="120px" height="120px"></a>
+                            <div class="title">
+                                <span>谜醉音乐FM</span>
+                                <p>开心时听懂音乐，伤心时听懂歌词</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/last1-2.jpg" width="120px" height="120px"></a>
+                            <div class="title">
+                                <span>有待电台</span>
+                                <p>资深音乐DJ的音乐私享</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/last1-3.jpg" width="120px" height="120px"></a>
+                            <div class="title">
+                                <span>黎文的黑胶酒馆</span>
+                                <p>聆听音乐故事 黑胶中的微醺感觉</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/last1-4.jpg" width="120px" height="120px"></a>
+                            <div class="title">
+                                <span>秘境回声</span>
+                                <p>十五年即兴讲解，点评专业独到</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="box-last-top">
+                        <span>美文读物.电台</span>
+                        <a href="#">更多></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/last2-1.jpg" width="120px" height="120px"></a>
+                            <div class="title">
+                                <span>洞见官方播客</span>
+                                <p>不是每一种观点，都可以叫洞见</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/last2-2.jpg" width="120px" height="120px"></a>
+                            <div class="title">
+                                <span>轻课朗读</span>
+                                <p>让朗读走进生活，使阅读不再功利</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/last2-3.jpg" width="120px" height="120px"></a>
+                            <div class="title">
+                                <span>郑老师的话</span>
+                                <p>用一篇美文扫清一周的疲惫</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/last2-4.jpg" width="120px" height="120px"></a>
+                            <div class="title">
+                                <span>有一间电台</span>
+                                <p>认真聆听你我都是故事的主角</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="singer_es">
+                <div class="singer-left">
+                    <div class="nav">
+                        <h2>推荐</h2>
+                        <ul>
+                            <li><a href="#">——推荐歌手</a></li>
+                            <li><a href="#">——入驻歌手</a></li>
+                        </ul>
+                        <div>
+                            <h2>华语</h2>
+                            <ul>
+                                <li><a href="#">——华语男歌手</a></li>
+                                <li><a href="#">——华语女歌手</a></li>
+                                <li><a href="#">——华语组合/乐队</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>欧美</h2>
+                            <ul>
+                                <li><a href="#">——欧美男歌手</a></li>
+                                <li><a href="#">——欧美女歌手</a></li>
+                                <li><a href="#">——欧美组合/乐队</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>日本</h2>
+                            <ul>
+                                <li><a href="#">——日本男歌手</a></li>
+                                <li><a href="#">——日本女歌手</a></li>
+                                <li><a href="#">——日本组合/乐队</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>韩国</h2>
+                            <ul>
+                                <li><a href="#">——韩国男歌手</a></li>
+                                <li><a href="#">——韩国女歌手</a></li>
+                                <li><a href="#">——韩国组合/乐队</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>其他</h2>
+                            <ul>
+                                <li><a href="#">——其他男歌手</a></li>
+                                <li><a href="#">——其他女歌手</a></li>
+                                <li><a href="#">——其他组合/乐队</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="singer-right">
+                    <div class="title">
+                        <span>入驻歌手</span>
+                        <a href="#">更多></a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/singer1.jpg" alt=""></a>
+                                <span>张惠妹</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2.jpg" alt=""></a>
+                                <span>Fine乐团</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3.jpg" alt=""></a>
+                                <span>万晓利</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer4.jpg" alt=""></a>
+                                <span>赵雷</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer5.jpg" alt=""></a>
+                                <span>王三薄</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer6.jpg" alt=""></a>
+                                <span>吴莫愁</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer7.jpg" alt=""></a>
+                                <span>洪启</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer8.jpg" alt=""></a>
+                                <span>李霄云</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer9.jpg" alt=""></a>
+                                <span>孙楠</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer10.jpg" alt=""></a>
+                                <span>老狼</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <span>热门歌手</span>
+                        <a href="#">更多></a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/singer2-1.jpg" alt=""></a>
+                                <span>隔壁老樊</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-2.jpg" alt=""></a>
+                                <span>G.E.M邓紫棋</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-3.jpg" alt=""></a>
+                                <span>薛之谦</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-4.jpg" alt=""></a>
+                                <span>音阙诗听</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-5.jpg" alt=""></a>
+                                <span>林俊杰</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-6.jpg" alt=""></a>
+                                <span>许嵩</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-7.jpg" alt=""></a>
+                                <span>陈奕迅</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-8.jpg" alt=""></a>
+                                <span>赵方靖</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-9.jpg" alt=""></a>
+                                <span>花粥</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer2-10.jpg" alt=""></a>
+                                <span>王贰浪</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <span>欧美男歌手</span>
+                        <a href="#">更多></a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/singer3-1.jpg" alt=""></a>
+                                <span>Alan Walker</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-2.jpg" alt=""></a>
+                                <span>Charlie Puth</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-3.jpg" alt=""></a>
+                                <span>Justin Bieber</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-4.jpg" alt=""></a>
+                                <span>Shawn Mendes</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-5.jpg" alt=""></a>
+                                <span>Troye Sivan</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-6.jpg" alt=""></a>
+                                <span>Martin Garrix</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-7.jpg" alt=""></a>
+                                <span>Ed Sheeran</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-8.jpg" alt=""></a>
+                                <span>Digital Farm</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-9.jpg" alt=""></a>
+                                <span>Eminem</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/singer3-10.jpg" alt=""></a>
+                                <span>XXXTENTACION</span>
+                                <a href="#" class="home"><img src="images/home.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="singer-bottom">
+
+                </div>
+            </div>
+
+            <div class="new">
+                <div id="banner">
+                    <div id="list" style="left: -1000px;">
+                        <img src="images/a.jpg" alt="1" />
+                        <img src="images/b.jpg" alt="2" />
+                        <img src="images/c.jpg" alt="3" />
+                        <img src="images/d.jpg" alt="4" />
+                        <img src="images/a.jpg" alt="5" />
+                    </div>
+                    <div id="buttons">
+                        <span index="1" class="on"></span>
+                        <span index="2"></span>
+                        <span index="3"></span>
+                        <span index="4"></span>
+                        <span index="5"></span>
+                    </div>
+                    <a href="javascript:0;" id="prev" class="arrow">&lt;</a>
+                    <a href="javascript:0;" id="next" class="arrow">&gt;</a>
+                </div>
+                <div class="title">
+                    <span>热门新碟</span>
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="images/new1.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">将故事写成我们</a></p>
+                        <p><a href="#">林俊杰</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">荒诞学家</a></p>
+                        <p><a href="#">尤长靖</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new3.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Life·Live</a></p>
+                        <p><a href="#">花粥 / 焦迈奇 </a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new4.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">我不好</a></p>
+                        <p><a href="#">张艺兴</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new5.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">EVEN WONG</a></p>
+                        <p><a href="#">王晨艺</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new6.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Norman ****ing </a></p>
+                        <p><a href="#">Lana Del Rey</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new7.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Lover</a></p>
+                        <p><a href="#">Taylor Swift</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new8.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">引路的风筝</a></p>
+                        <p><a href="#">张韶涵</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new9.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">花都开好了</a></p>
+                        <p><a href="#">火箭少女101赖美云</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new10.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Hollywood's Bleeding</a></p>
+                        <p><a href="#">Post Malone</a></p>
+                    </li>
+                </ul>
+                <div class="title">
+                    <span class="all">全部新碟</span>
+                    <span class="line"><a href="#">全部 | 华语 | 欧美 | 韩国 | 日本</a></span>
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="images/new2-1.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">长安遥想</a></p>
+                        <p><a href="#">蔡翊昇</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-2.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">loveletter</a></p>
+                        <p><a href="#">Rheehab</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-3.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">사바스</a></p>
+                        <p><a href="#">김사월</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-4.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Seven Days Walking</a></p>
+                        <p><a href="#">Ludovico Einaudi</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-5.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">NO ONE LIKE YOU</a></p>
+                        <p><a href="#">THEOCEAN</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-6.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">look of love</a></p>
+                        <p><a href="#">KAZEF</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-7.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">너와</a></p>
+                        <p><a href="#">MaseWonder</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-8.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Hands Behind My Back</a></p>
+                        <p><a href="#">刘逸云 Amber Liu</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-9.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">One Night</a></p>
+                        <p><a href="#">Wiz Khalifa</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-10.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Memories</a></p>
+                        <p><a href="#">Maroon 5</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-11.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">On Sight </a></p>
+                        <p><a href="#">Free Nationals</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-12.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">To The Stars</a></p>
+                        <p><a href="#">Max Richter</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-13.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">황금정원 Part.3</a></p>
+                        <p><a href="#">Navi</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-14.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Cause And Effect</a></p>
+                        <p><a href="#">Keane</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-15.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">God Is A Dancer</a></p>
+                        <p><a href="#">Tiësto / Mabel</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-16.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">Sunshine Kitty</a></p>
+                        <p><a href="#">Tove Lo</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-17.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">当我望向她的时候</a></p>
+                        <p><a href="#">我不李志</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-18.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">谁来</a></p>
+                        <p><a href="#">韩庚</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-19.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">还</a></p>
+                        <p><a href="#">张韶涵</a></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/new2-20.jpg" alt="">
+                            <a href="#" class="msk"></a>
+                        </div>
+                        <p class="name"><a href="#">洛杉矶2.0</a></p>
+                        <p><a href="#">DOUBLE-X</a></p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="lib/jquery-1.11.3.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="js/cloudmusic.js"></script>
+<script src="js/play.js"></script>
+<script src="js/lunbo.js"></script>
+<script src="./js/login.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
+
+</html>

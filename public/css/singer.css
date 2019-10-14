@@ -1,0 +1,108 @@
+/* body{
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul{
+    list-style: none;
+}
+.singer_es{
+    width: 1050px;
+    height: 1280px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 12px;
+    display: none;
+}
+.singer-left{
+    width: 180px;
+    height: 1280px;
+    float:left;
+    background-color: #f5f5f5;
+    border-left: 1px solid #d3d3d3;
+}
+.nav{
+    width: 160px;
+    height: 826px;
+    margin-top: 51px;
+    padding: 0 10px 40px;
+}
+.nav ul{
+    display: block;
+    width: 160px;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    font-size: 12px;
+    float: left;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+}
+.nav li a{
+    color: #333333;
+}
+.nav div{
+    width: 160px;
+    height: 135px;
+    margin: 5px 0 0;
+    border-top: 1px solid #d3d3d3;
+}
+.singer-right{
+    width: 788px;
+    height: 1180px;
+    padding: 40px;
+    float: right;
+    border-left: 1px solid #d3d3d3;
+}
+.singer-right .title{
+    width: 719px;
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+.singer-right .title span{
+    font-size: 24px;
+    float: left;
+}
+.singer-right .title a{
+    display: block;
+    float: right;
+    line-height: 40px;
+    color: #333333;
+}
+.singer-right ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+    width: 736px;
+    height: 368px;
+}
+.singer-right ul li{
+    display: block;
+    width: 144px;
+    height: 184px;
+    float:left;
+    position: relative;
+}
+.singer-right ul li img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.singer-right ul li span{
+    position: absolute;
+    padding-left: 5px;
+    bottom: 16px;
+}
+.singer-right ul li .home{
+    position: absolute;
+    right: 4px;
+    bottom:16px;
+}
